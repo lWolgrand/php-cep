@@ -2,11 +2,12 @@
 
 namespace Wolgrand\PhpCep;
 
+
 /**
  * @var $url = Endereço url.
  * @var string $zipcode = Apenas números.
  * @var $get = Armazena o conteúdo do endereço url em Json.
- * @function = Recebe uma variável do tipo string e retorna um @array.
+ * @function = Recebe uma variável do tipo string e retorna um @array
  */
 class Search
 {
