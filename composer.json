@@ -1,0 +1,21 @@
+{
+    "name": "wolgrand/php-cep",
+    "description": "Buscando CEP online",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Wolgrand\\PhpCep\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Wolgrand",
+            "email": "lopeswolgrand@gmail.com"
+        }
+    ],
+    "require": {
+        "php":">=7.2.0"
+    }
+    
+}
