@@ -1,9 +1,10 @@
 <?php
 
-use PHPUnit\Framework\TesteCase;
 
+use PHPUnit\Framework\TestCase;
+use Wolgrand\PhpCep\Search;
 
-class SearchTest extends PHPUnit_Framework_TestCase  
+class SearchTest extends TestCase //ou PHPUnit\Framework\TesteCase
 {
     public function testGetAdressFromZipcodeDefaltUsage()
     {

@@ -6,6 +6,6 @@ use \Wolgrand\PhpCep\Search;
 
 $busca = new Search;
 
-$resultado = $busca->getAdressFromZipcode('20911300');
+$result = $busca->getAdressFromZipcode('20911300');
 
-print_r($resultado);
+print_r($result);
