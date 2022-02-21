@@ -2,7 +2,6 @@
 
 namespace Wolgrand\PhpCep;
 
-
 /**
  * @var $url = Endereço url.
  * @var string $zipcode = Apenas números.
@@ -18,7 +17,23 @@ class Search
         $zipcode = preg_replace('/[^0-9]/im', '', $zipcode);
 
         $get = file_get_contents($this->url . $zipcode . "/json");
-        
+
         return(array) json_decode($get);
+    }
+
+    private function getFromServer($zipcode)
+    {
+        $get = file_get_contents($this->url . $zipcode . "/json");
+
+        return $get;
+    }
+
+    private function processData($data)
+    {
+        foreach ($data as $k => $v) {
+            $data[$k] = trim($v);
+        }
+
+        return $data;
     }
 }
